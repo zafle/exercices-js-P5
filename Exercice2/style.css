@@ -1,4 +1,122 @@
-html {
-    height: 100%;
+:root {
+    --font-title: 'Gloria Hallelujah', sans-serif;
+    --font-text: 'Red Hat Display', sans-serif;
+    --primary-color: #f53c5b;
+    --secondary-color: #67E538;
+
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-family: var(--font-title);
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+p, a {
+    font-family: var(--font-text);
+    font-size: 1.125rem;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1280px;
+    background-color: white;
+    padding: 100px 50px;
+}
+
+/* hero */
+.hero__image {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid var(--primary-color);
+}
+/*  description */
+.description {
+    margin: 40px auto;
+    max-width: 1000px;
+
+}
+/* members */
+.members__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin-bottom: 40px;
+
+}
+.members__item {
+    max-width: 260px;
+    padding: 20px;
+}
+.members__item h3::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f8d9';
+    margin-right: 20px;
+}
+.members__item p{
+    text-align: center;
+}
+/* song */
+.song a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.song a:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        background-image: url(img/mur-briques.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p, a {
+        font-size: 1rem;
+    }
+    .members__list {
+        gap: 0;
+    }
 }
