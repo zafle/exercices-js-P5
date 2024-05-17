@@ -4,7 +4,7 @@ function printNumbers(n) {
     let numbers = [];
     let i = 1;
     for (i = 1; i <= number; i++) {
-        numbers += i;
+        numbers.push(i);
     }
     let numbersToString = numbers.join(' ');
     return numbersToString;
