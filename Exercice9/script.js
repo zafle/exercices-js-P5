@@ -9,7 +9,7 @@ function checkAge(number) {
     } else if (age > 65) {
        message = "Vous êtes senior.";
     }
-    console.log(message);
+    return message;
 }
 
 export default checkAge;
