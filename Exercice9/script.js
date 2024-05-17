@@ -10,6 +10,5 @@ function checkAge(number) {
     }
 }
 
-checkAge(25);
 
 export default checkAge;
