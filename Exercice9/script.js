@@ -1,13 +1,15 @@
 // votre code ici
 function checkAge(number) {
     const age = parseInt(number);
+    const message = "";
     if (age < 18) {
-        alert("Vous êtes mineur.");
+        message = "Vous êtes mineur.";
     } else if (age >= 18 && age <= 65) {
-        alert("Vous êtes majeur.");
+        message = "Vous êtes majeur.";
     } else if (age > 65) {
-        alert("Vous êtes senior.");
+        message = "Vous êtes senior.";
     }
+    return message;
 }
 
 
